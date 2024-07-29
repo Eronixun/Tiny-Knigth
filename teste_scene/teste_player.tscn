@@ -1,0 +1,128 @@
+[gd_scene load_steps=6 format=3 uid="uid://dwmn8xy5xa6am"]
+
+[ext_resource type="Texture2D" uid="uid://bw1qcbhlaax5i" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_fqe8h"]
+[ext_resource type="PackedScene" uid="uid://d1l7hdx5nyajd" path="res://player/player.tscn" id="2_axv8c"]
+[ext_resource type="PackedScene" uid="uid://cbwujbte45e0d" path="res://misc/golden_meat.tscn" id="3_skhfh"]
+[ext_resource type="PackedScene" uid="uid://cb6gvhtjkangb" path="res://misc/meat.tscn" id="4_0wl5e"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uc0tv"]
+line_spacing = 27.0
+
+[node name="Teste_player" type="Node2D"]
+position = Vector2(1720, 996)
+
+[node name="WarriorBlue" type="Sprite2D" parent="."]
+position = Vector2(1931, 645)
+scale = Vector2(2.79475, 2.6685)
+texture = ExtResource("1_fqe8h")
+
+[node name="Label" type="Label" parent="WarriorBlue"]
+offset_left = 624.0
+offset_top = -702.0
+offset_right = 664.0
+offset_bottom = -679.0
+scale = Vector2(2.93463, 2.94009)
+text = "idle"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="WarriorBlue"]
+offset_left = 628.0
+offset_top = -508.0
+offset_right = 668.0
+offset_bottom = -485.0
+scale = Vector2(2.93463, 2.94009)
+text = "run"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="WarriorBlue"]
+offset_left = 610.0
+offset_top = -316.0
+offset_right = 713.0
+offset_bottom = -293.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack_side_1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="WarriorBlue"]
+offset_left = 600.0
+offset_top = -111.0
+offset_right = 707.0
+offset_bottom = -88.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack_side_2 "
+metadata/_edit_use_anchors_ = true
+
+[node name="Label5" type="Label" parent="WarriorBlue"]
+offset_left = 586.0
+offset_top = 76.0
+offset_right = 705.0
+offset_bottom = 99.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack _down_1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label7" type="Label" parent="WarriorBlue"]
+offset_left = 568.0
+offset_top = 273.0
+offset_right = 687.0
+offset_bottom = 296.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack _down_2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label8" type="Label" parent="WarriorBlue"]
+offset_left = 618.0
+offset_top = 462.0
+offset_right = 737.0
+offset_bottom = 485.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack _up_1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label9" type="Label" parent="WarriorBlue"]
+offset_left = 616.0
+offset_top = 659.0
+offset_right = 735.0
+offset_bottom = 682.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack _up_2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label6" type="Label" parent="WarriorBlue"]
+anchors_preset = -1
+anchor_left = -0.347
+anchor_top = 0.0824688
+anchor_right = -0.080507
+anchor_bottom = 0.0824688
+offset_left = -118.256
+offset_top = -981.672
+offset_right = -78.256
+offset_bottom = -958.672
+scale = Vector2(3.42597, 3.85798)
+text = "0            1            2           3           4            5"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label10" type="Label" parent="WarriorBlue"]
+anchors_preset = -1
+anchor_left = -0.474628
+anchor_top = 0.0799063
+anchor_right = -0.474628
+anchor_bottom = 0.309073
+offset_left = -110.78
+offset_top = -818.258
+offset_right = -70.7797
+offset_bottom = -795.258
+scale = Vector2(3.42597, 3.85798)
+text = "0 1 2 3 4 5 6 7"
+label_settings = SubResource("LabelSettings_uc0tv")
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Player2" parent="." instance=ExtResource("2_axv8c")]
+position = Vector2(-1110, -471)
+
+[node name="Meat" parent="." instance=ExtResource("3_skhfh")]
+position = Vector2(-1503.5, -635.719)
+
+[node name="Meat2" parent="." instance=ExtResource("4_0wl5e")]
+position = Vector2(-1453, -558)

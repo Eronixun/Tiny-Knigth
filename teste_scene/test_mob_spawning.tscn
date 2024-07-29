@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://fugdqb6w7emt"]
+
+[ext_resource type="PackedScene" uid="uid://d1l7hdx5nyajd" path="res://player/player.tscn" id="1_yorto"]
+[ext_resource type="PackedScene" uid="uid://b7bjkowi8ltby" path="res://systems/mob_spawner.tscn" id="2_7cir0"]
+[ext_resource type="PackedScene" uid="uid://cb6gvhtjkangb" path="res://misc/meat.tscn" id="3_qpp5r"]
+[ext_resource type="PackedScene" uid="uid://bpkq4japludxl" path="res://teste_scene/test_ui.tscn" id="4_qgca2"]
+
+[node name="TestMobSpawning" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_yorto")]
+
+[node name="MobSpawner" parent="." instance=ExtResource("2_7cir0")]
+
+[node name="Meat" parent="." instance=ExtResource("3_qpp5r")]
+position = Vector2(1023, 504)
+regeneration_amount = 30
+
+[node name="Meat2" parent="." instance=ExtResource("3_qpp5r")]
+position = Vector2(62, 105)
+
+[node name="Meat3" parent="." instance=ExtResource("3_qpp5r")]
+position = Vector2(1026, 96)
+
+[node name="Meat4" parent="." instance=ExtResource("3_qpp5r")]
+position = Vector2(58, 582)
+
+[node name="TestUi" parent="." instance=ExtResource("4_qgca2")]

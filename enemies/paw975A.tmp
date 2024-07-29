@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://72sgn41dtg0f"]
+
+[ext_resource type="Script" path="res://enemies/behaviors/follow_player.gd" id="1_k73ac"]
+[ext_resource type="Texture2D" uid="uid://0au7lpblalh4" path="res://addons/Tiny Swords/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png" id="1_qpuhh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpj3h"]
+atlas = ExtResource("1_qpuhh")
+region = Rect2(0, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ebkrr"]
+atlas = ExtResource("1_qpuhh")
+region = Rect2(192, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqmnj"]
+atlas = ExtResource("1_qpuhh")
+region = Rect2(384, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs370"]
+atlas = ExtResource("1_qpuhh")
+region = Rect2(576, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_le0dc"]
+atlas = ExtResource("1_qpuhh")
+region = Rect2(768, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gsk20"]
+atlas = ExtResource("1_qpuhh")
+region = Rect2(960, 192, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o4se2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpj3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ebkrr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqmnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hs370")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_le0dc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gsk20")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yc34h"]
+radius = 17.1736
+height = 49.7462
+
+[node name="Pawn" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_k73ac")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -24)
+sprite_frames = SubResource("SpriteFrames_o4se2")
+autoplay = "default"
+frame_progress = 0.643033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -22)
+scale = Vector2(0.989892, 0.924693)
+shape = SubResource("CapsuleShape2D_yc34h")
+debug_color = Color(0, 0.6, 0.701961, 0.184314)

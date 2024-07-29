@@ -1,0 +1,204 @@
+[gd_scene load_steps=20 format=3 uid="uid://dtfauekt3x67"]
+
+[ext_resource type="Texture2D" uid="uid://bw1qcbhlaax5i" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_iqqlu"]
+[ext_resource type="Texture2D" uid="uid://0au7lpblalh4" path="res://addons/Tiny Swords/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png" id="2_t6ayr"]
+[ext_resource type="Texture2D" uid="uid://bv0im7ioc8da1" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Torch/Red/Torch_Red.png" id="3_huf0s"]
+[ext_resource type="Texture2D" uid="uid://j14b6yp5hx70" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Barrel/Blue/Barrel_Blue.png" id="4_mb5c5"]
+[ext_resource type="Texture2D" uid="uid://bvvlunna622bs" path="res://addons/Tiny Swords/Factions/Knights/Troops/Dead/Dead.png" id="5_gy3hp"]
+[ext_resource type="Texture2D" uid="uid://botk1ahgcfsj8" path="res://addons/Tiny Swords/Factions/Knights/Troops/Archer/Blue/Archer_Blue.png" id="6_l3po1"]
+[ext_resource type="Texture2D" uid="uid://0xqsoev4s7y" path="res://addons/Tiny Swords/Factions/Knights/Troops/Archer/Arrow/Arrow.png" id="7_0nv65"]
+[ext_resource type="Texture2D" uid="uid://dx8x05j10pq6m" path="res://addons/Tiny Swords/Resources/Trees/Tree.png" id="8_klnap"]
+[ext_resource type="Texture2D" uid="uid://d05t85mnju36m" path="res://addons/Tiny Swords/Resources/Sheep/HappySheep_All.png" id="9_rcakn"]
+[ext_resource type="Texture2D" uid="uid://bcc667woqac30" path="res://addons/Tiny Swords/Resources/Sheep/HappySheep_Bouncing.png" id="10_s4opc"]
+[ext_resource type="Texture2D" uid="uid://cce2h4d12em6u" path="res://addons/Tiny Swords/Resources/Sheep/HappySheep_Idle.png" id="11_x3fy4"]
+[ext_resource type="Texture2D" uid="uid://vr3y4877ipkl" path="res://addons/Tiny Swords/Resources/Gold Mine/GoldMine_Active.png" id="12_8pbqt"]
+[ext_resource type="Texture2D" uid="uid://fer7o878v0j0" path="res://addons/Tiny Swords/Resources/Gold Mine/GoldMine_Destroyed.png" id="13_0seia"]
+[ext_resource type="Texture2D" uid="uid://cyb32afm7wuef" path="res://addons/Tiny Swords/Resources/Gold Mine/GoldMine_Inactive.png" id="14_0l78l"]
+[ext_resource type="Texture2D" uid="uid://bff7jhdorf1wv" path="res://addons/Tiny Swords/Terrain/Bridge/Bridge_All.png" id="15_mafss"]
+[ext_resource type="Texture2D" uid="uid://c44hpgia603fj" path="res://addons/Tiny Swords/Effects/Explosion/Fire/Fire.png" id="16_n5lvm"]
+[ext_resource type="Texture2D" uid="uid://dla2ceaf58bpw" path="res://addons/Tiny Swords/Resources/Resources/M_Idle.png" id="17_yjvbm"]
+[ext_resource type="Texture2D" uid="uid://7tls4pm10hat" path="res://addons/Tiny Swords/Resources/Resources/M_Spawn.png" id="18_lbok6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_j5w0j"]
+line_spacing = 27.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WarriorBlue" type="Sprite2D" parent="."]
+position = Vector2(1931, 645)
+scale = Vector2(2.79475, 2.6685)
+texture = ExtResource("1_iqqlu")
+
+[node name="Label" type="Label" parent="WarriorBlue"]
+offset_left = 624.0
+offset_top = -702.0
+offset_right = 664.0
+offset_bottom = -679.0
+scale = Vector2(2.93463, 2.94009)
+text = "idle"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="WarriorBlue"]
+offset_left = 628.0
+offset_top = -508.0
+offset_right = 668.0
+offset_bottom = -485.0
+scale = Vector2(2.93463, 2.94009)
+text = "run"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="WarriorBlue"]
+offset_left = 610.0
+offset_top = -316.0
+offset_right = 713.0
+offset_bottom = -293.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack_side_1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="WarriorBlue"]
+offset_left = 600.0
+offset_top = -111.0
+offset_right = 707.0
+offset_bottom = -88.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack_side_2 "
+metadata/_edit_use_anchors_ = true
+
+[node name="Label5" type="Label" parent="WarriorBlue"]
+offset_left = 586.0
+offset_top = 76.0
+offset_right = 705.0
+offset_bottom = 99.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack _down_1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label7" type="Label" parent="WarriorBlue"]
+offset_left = 568.0
+offset_top = 273.0
+offset_right = 687.0
+offset_bottom = 296.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack _down_2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label8" type="Label" parent="WarriorBlue"]
+offset_left = 618.0
+offset_top = 462.0
+offset_right = 737.0
+offset_bottom = 485.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack _up_1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label9" type="Label" parent="WarriorBlue"]
+offset_left = 616.0
+offset_top = 659.0
+offset_right = 735.0
+offset_bottom = 682.0
+scale = Vector2(2.93463, 2.94009)
+text = "attack _up_2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label6" type="Label" parent="WarriorBlue"]
+anchors_preset = -1
+anchor_left = -0.347
+anchor_top = 0.0824688
+anchor_right = -0.080507
+anchor_bottom = 0.0824688
+offset_left = -118.256
+offset_top = -981.672
+offset_right = -78.256
+offset_bottom = -958.672
+scale = Vector2(3.42597, 3.85798)
+text = "0            1            2           3           4            5"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label10" type="Label" parent="WarriorBlue"]
+anchors_preset = -1
+anchor_left = -0.474628
+anchor_top = 0.0799063
+anchor_right = -0.474628
+anchor_bottom = 0.309073
+offset_left = -110.78
+offset_top = -818.258
+offset_right = -70.7797
+offset_bottom = -795.258
+scale = Vector2(3.42597, 3.85798)
+text = "0 1 2 3 4 5 6 7"
+label_settings = SubResource("LabelSettings_j5w0j")
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="PawnRed" type="Sprite2D" parent="."]
+position = Vector2(-2261, 1635)
+texture = ExtResource("2_t6ayr")
+
+[node name="TorchRed" type="Sprite2D" parent="."]
+position = Vector2(-2410, 1931)
+texture = ExtResource("3_huf0s")
+
+[node name="BarrelBlue" type="Sprite2D" parent="."]
+position = Vector2(-3162, 1848)
+texture = ExtResource("4_mb5c5")
+
+[node name="WarriorBlue2" type="Sprite2D" parent="."]
+position = Vector2(-2639, 2110)
+texture = ExtResource("1_iqqlu")
+
+[node name="Dead" type="Sprite2D" parent="."]
+position = Vector2(-3038, 2148)
+texture = ExtResource("5_gy3hp")
+
+[node name="ArcherBlue" type="Sprite2D" parent="."]
+position = Vector2(-1335, 1648)
+texture = ExtResource("6_l3po1")
+
+[node name="Arrow" type="Sprite2D" parent="."]
+position = Vector2(-1573, 2036)
+texture = ExtResource("7_0nv65")
+
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(-3162, 1627)
+texture = ExtResource("8_klnap")
+
+[node name="HappySheepAll" type="Sprite2D" parent="."]
+position = Vector2(-2936, 1605)
+texture = ExtResource("9_rcakn")
+
+[node name="HappySheepBouncing" type="Sprite2D" parent="."]
+position = Vector2(-3207, 1769)
+texture = ExtResource("10_s4opc")
+
+[node name="HappySheepIdle" type="Sprite2D" parent="."]
+position = Vector2(-2829, 2110)
+texture = ExtResource("11_x3fy4")
+
+[node name="GoldMineActive" type="Sprite2D" parent="."]
+position = Vector2(-3642, 1667)
+texture = ExtResource("12_8pbqt")
+
+[node name="GoldMineDestroyed" type="Sprite2D" parent="."]
+position = Vector2(-3602, 1708)
+texture = ExtResource("13_0seia")
+
+[node name="GoldMineInactive" type="Sprite2D" parent="."]
+position = Vector2(-3549, 1580)
+texture = ExtResource("14_0l78l")
+
+[node name="BridgeAll" type="Sprite2D" parent="."]
+position = Vector2(-3528, 1660)
+texture = ExtResource("15_mafss")
+
+[node name="Fire" type="Sprite2D" parent="."]
+position = Vector2(-3541, 1666)
+texture = ExtResource("16_n5lvm")
+
+[node name="MIdle" type="Sprite2D" parent="."]
+position = Vector2(-4254, 2266)
+texture = ExtResource("17_yjvbm")
+
+[node name="MSpawn" type="Sprite2D" parent="."]
+position = Vector2(-3895, 2401)
+texture = ExtResource("18_lbok6")
